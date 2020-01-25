@@ -1,97 +1,172 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
+    <img alt="Gatsby" src="" width="360" />
   </a>
-</p>
-<h1 align="center">
-  Gatsby's default starter
-</h1>
+<p>
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+# [Eagleshighpainting.com](https://eagleshighpainting.com)
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+Eagles High Painting Inc. [GatsbyJS](https://www.gatsbyjs.org/) corporate website. This is the repository to the companies website front end code. Please continue reading for instructions on getting the project set up for development, testing purposes and also code standard and other useful information. See deployment for notes on how to deploy the project on a live system.
 
-## 🚀 Quick start
+## Getting Started
 
-1.  **Create a Gatsby site.**
+You will need to have the projects repository cloned and have Access rights to the repository. Normally all administrators have read and write access to the repo. Before Getting started please review basic React, and also SCSS fundamentals.
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+## Prerequisites
 
-    ```shell
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
-    ```
+To run Development environment on this website you will need the latest version of node and npm installed to your machine to install visit [here](https://www.webucator.com/how-to/how-install-nodejs-on-mac.cfm). Also access to your terminal. Please review [GatsbyJS documentation](https://www.gatsbyjs.org/docs/) for installation instructions.
 
-1.  **Start developing.**
+## Installing
 
-    Navigate into your new site’s directory and start it up.
+Once machine is ready follow these step by step series of examples that tell you how to get a development env running. This will require terminal to be open and run commands below.
 
-    ```shell
-    cd my-default-starter/
-    gatsby develop
-    ```
+```
+git clone https://github.com/loboteck/corporate-site.git
+```
 
-1.  **Open the source code and start editing!**
+```
+cd eagles-high-painting
+```
 
-    Your site is now running at `http://localhost:8000`!
+```
+npm install
+```
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+```
+npm install -g gatsby-cli
+```
 
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+```
+gatsby develop
+```
 
-## 🧐 What's inside?
+Then in your browser go to [https://localhost:8000](https://localhost:8000) to view development version of the website once dev server is started. Once you're at that url you will be able to make changes to the websites code and have the browser automatically refresh with updated changes
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
+## Running the tests
 
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
+Explain how to run the automated tests for this system
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+## Break down into end to end tests
 
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+Explain what these tests test and why
 
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+```
+Need to write about tests
+```
 
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
+## Coding style
 
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+We need to be able to keep everything fully constistent and scalable so that the website is easy to maintain and have other developers working on it for code style there is a .prettierrc file to format all files run command below
 
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
+```
+npm run format
+```
 
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+If you do not want to run this command you can install prettier format for vscode or your IDE. For indentation please use 3 spaces. 
 
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+## SCSS - Bem scope
 
-9.  **`LICENSE`**: Gatsby is licensed under the MIT license.
+What is BEM?
+BEM stands for Block, Element, and Modifier. It’s a CSS naming convention for writing cleaner and more readable CSS classes.
+BEM also aims to write independent CSS blocks in order to reuse them later in your project.
+Before we jump into details, you can see below an example of how BEM class namings are:
 
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+```
+// Blocks are named as standard CSS classes
+.block {
+}
+// Elements declared with 2 underscores, after block
+.block__element {
+}
+// Modifiers declared with 2 dashes, after block or after element
+.block--modifier {
+}
+// element and modifier together
+.block__element--modifier {
+}
+```
 
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+## Blocks
+Blocks are independent, reusable and usually bigger components of a webpage. They can have modifiers and contain elements.
+We can count bigger parts in a webpage like ```<header>, <nav>, <section>, <form>, <article>, <footer>``` as block examples.
 
-12. **`README.md`**: A text file containing useful reference information about your project.
+## Elements
+Elements are children of blocks. An element can only have 1 parent Block, and can’t be used independently outside of that block.
+The naming of an element must start with its parent Block name, 2 underscores after it, and end with its own name:
 
-## 🎓 Learning Gatsby
+```
+<header class="youtube-header">
+  <img class="youtube-header__logo"/>
+  <div class="youtube-header__search"></div>
+  <ul class="youtube-header__list">
+    <li class="youtube-header__item></li>
+    <li class="youtube-header__item></li>
+ </ul>
+</header>
+```
+Since youtube-header is the block, the naming convention of its elements can be written like this:
 
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
+```
+.youtube-header {
+  // rules
+  &__logo {
+    // rules
+  }
+  &__search {
+    // rules
+  }
+  &__list {
+    // rules
+  }
+  &__item {
+    // rules
+  }
+}
+```
 
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
+## Modifiers 
+Modifiers
+Modifiers represent different states or styles of classes. They can be used both for blocks or elements.
+In HTML a modifier must be used together with its Block / Element, as additional features:
 
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+```
+<form class="form form--large">
+  <button class="form__button form__button--red"></button>
+</form>
+```
+The naming of a modifier must start with its parent Block name, 2 dashes after it, and end with its own name.
+Block — Modifier:
 
-## 💫 Deploy
+```
+Element — Modifier:
+.form {
+  // rules
+  .form__button {
+    // rules
+    
+    .form__button--red {}  // Block Element Modifiers
+    .form__button--green {}
+   }
+}
+```
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+## Deployment 💫
 
-<!-- AUTO-GENERATED-CONTENT:END -->
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/sites/loboteck/overview)
+Our code deployment is automatically deployed to netlify once this repository's master branch has been updated.
+
+## Built With
+
+* [GatsbyJS](https://www.gatsbyjs.org/) - React Static site framework used
+* [NPM](https://www.npmjs.com/get-npm) - Dependency Management
+* [Graphql](https://graphql.org/) - Used to query site data
+
+## Version Control
+
+We use [Github](http://github.com/) for versioning control all majore releases will be deployed to [https://loboteck.com](https://loboteck.com) 
+
+## Authors
+
+* **Kevin Lopez** - *Project Lead* - [Email](lopezkevin175@gmail.com)
+
+See also the list of [contributors](https://github.com/loboteck/corporate-site/graphs/contributors) who participated in this project.
