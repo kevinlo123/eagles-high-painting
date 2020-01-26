@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Layout from '../4_layouts/layout';
 import SEO from '../2_components/seo';
 

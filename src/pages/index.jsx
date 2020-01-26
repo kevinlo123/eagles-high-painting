@@ -1,6 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
-
 import Layout from '../4_layouts/layout';
 import SEO from '../2_components/seo';
 import '../../styles/main.scss';
@@ -8,8 +6,8 @@ import '../../styles/main.scss';
 
 const IndexPage = () => (
    <Layout>
-      <SEO title="Home" />
-      <Link to="/page-2/">Go to page 2</Link>
+      <SEO title="Eagles High Painting inc. - A Painting Company in Boston" />
+      <h1>Home page</h1>
    </Layout>
 );
 

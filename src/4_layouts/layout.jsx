@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
-import Logo from '../1_pieces/logo';
-import Header from '../2_components/header';
+import Header from '../3_regions/header';
+import Footer from '../3_regions/footer';
 
 const Layout = ({ children }) => {
    const data = useStaticQuery(graphql`
@@ -18,17 +18,11 @@ const Layout = ({ children }) => {
 
    return (
       <>
-         <div className="logo-container">
-            <Logo />
-         </div>
          <Header
             siteTitle={data.site.siteMetadata.title}
-            siteDescription={data.site.siteMetadata.description}
          />
-         <div>
-            <main>{children}</main>
-            <footer>© {new Date().getFullYear()}</footer>
-         </div>
+         <main>{children}</main>
+         <Footer/>
       </>
    );
 };
