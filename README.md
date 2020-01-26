@@ -62,7 +62,7 @@ We need to be able to keep everything fully constistent and scalable so that the
 npm run format
 ```
 
-If you do not want to run this command you can install prettier format for vscode or your IDE. For indentation please use 3 spaces. 
+If you do not want to run this command you can install prettier format for vscode or your IDE. For indentation please use 3 spaces.
 
 ## SCSS - Bem scope
 
@@ -87,10 +87,12 @@ Before we jump into details, you can see below an example of how BEM class namin
 ```
 
 ## Blocks
+
 Blocks are independent, reusable and usually bigger components of a webpage. They can have modifiers and contain elements.
-We can count bigger parts in a webpage like ```<header>, <nav>, <section>, <form>, <article>, <footer>``` as block examples.
+We can count bigger parts in a webpage like `<header>, <nav>, <section>, <form>, <article>, <footer>` as block examples.
 
 ## Elements
+
 Elements are children of blocks. An element can only have 1 parent Block, and can’t be used independently outside of that block.
 The naming of an element must start with its parent Block name, 2 underscores after it, and end with its own name:
 
@@ -104,6 +106,7 @@ The naming of an element must start with its parent Block name, 2 underscores af
  </ul>
 </header>
 ```
+
 Since youtube-header is the block, the naming convention of its elements can be written like this:
 
 ```
@@ -124,7 +127,8 @@ Since youtube-header is the block, the naming convention of its elements can be 
 }
 ```
 
-## Modifiers 
+## Modifiers
+
 Modifiers
 Modifiers represent different states or styles of classes. They can be used both for blocks or elements.
 In HTML a modifier must be used together with its Block / Element, as additional features:
@@ -134,6 +138,7 @@ In HTML a modifier must be used together with its Block / Element, as additional
   <button class="form__button form__button--red"></button>
 </form>
 ```
+
 The naming of a modifier must start with its parent Block name, 2 dashes after it, and end with its own name.
 Block — Modifier:
 
@@ -143,7 +148,7 @@ Element — Modifier:
   // rules
   .form__button {
     // rules
-    
+
     .form__button--red {}  // Block Element Modifiers
     .form__button--green {}
    }
@@ -157,16 +162,16 @@ Our code deployment is automatically deployed to netlify once this repository's 
 
 ## Built With
 
-* [GatsbyJS](https://www.gatsbyjs.org/) - React Static site framework used
-* [NPM](https://www.npmjs.com/get-npm) - Dependency Management
-* [Graphql](https://graphql.org/) - Used to query site data
+-  [GatsbyJS](https://www.gatsbyjs.org/) - React Static site framework used
+-  [NPM](https://www.npmjs.com/get-npm) - Dependency Management
+-  [Graphql](https://graphql.org/) - Used to query site data
 
 ## Version Control
 
-We use [Github](http://github.com/) for versioning control all majore releases will be deployed to [https://loboteck.com](https://loboteck.com) 
+We use [Github](http://github.com/) for versioning control all majore releases will be deployed to [https://loboteck.com](https://loboteck.com)
 
 ## Authors
 
-* **Kevin Lopez** - *Project Lead* - [Email](lopezkevin175@gmail.com)
+-  **Kevin Lopez** - _Project Lead_ - [Email](lopezkevin175@gmail.com)
 
 See also the list of [contributors](https://github.com/loboteck/corporate-site/graphs/contributors) who participated in this project.
