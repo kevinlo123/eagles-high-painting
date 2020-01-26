@@ -18,7 +18,7 @@ const Layout = ({ children }) => {
 
    return (
       <>
-         <div class="logo-container">
+         <div className="logo-container">
             <Logo />
          </div>
          <Header

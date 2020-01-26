@@ -22,10 +22,10 @@ module.exports = {
             name: `gatsby-starter-default`,
             short_name: `EHP`,
             start_url: `/`,
-            background_color: `#663399`,
-            theme_color: `#663399`,
+            background_color: `#0A0A86`,
+            theme_color: `#0A0A86`,
             display: `minimal-ui`,
-            icon: `${__dirname}/images/eagles-high-painting.jpg`, // This path is relative to the root of the site.
+            icon: `${__dirname}/images/eagles-high-painting.png`, // This path is relative to the root of the site.
          },
       },
       // this (optional) plugin enables Progressive Web App + Offline functionality
