@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="" width="360" />
+    <img alt="Eagles high Painting Inc. - Logo" src="https://user-images.githubusercontent.com/29260507/73127318-67f06300-3f8c-11ea-86c3-d6263fb6c2a6.jpg" width="180" height="180" />
   </a>
 <p>
 
