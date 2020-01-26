@@ -174,4 +174,4 @@ We use [Github](http://github.com/) for versioning control all majore releases w
 
 -  **Kevin Lopez** - _Project Lead_ - [Email](lopezkevin175@gmail.com)
 
-See also the list of [contributors](https://github.com/loboteck/corporate-site/graphs/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/kevinlo123/eagles-high-painting/graphs/contributors) who participated in this project.
