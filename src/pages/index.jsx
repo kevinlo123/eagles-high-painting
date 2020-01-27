@@ -8,6 +8,56 @@ const IndexPage = () => (
    <Layout>
       <SEO title="Eagles High Painting inc. - A Painting Company in Boston" />
       <h1>Home page</h1>
+      <h1>Home page</h1>
+      <h1>Home page</h1>
+
+      <h1>Home page</h1>
+
+
+      <h1>Home page</h1>
+
+      <h1>Home page</h1>
+
+      <h1>Home page</h1>
+
+      <h1>Home page</h1>
+
+      <h1>Home page</h1>
+
+      <h1>Home page</h1>
+
+      <h1>Home page</h1>
+
+
+      <h1>Home page</h1>
+
+      <h1>Home page</h1>
+
+      <h1>Home page</h1>
+
+      <h1>Home page</h1>
+
+      <h1>Home page</h1>
+
+
+      <h1>Home page</h1>
+
+      <h1>Home page</h1>
+
+      <h1>Home page</h1>
+
+      <h1>Home page</h1>
+
+
+      <h1>Home page</h1>
+
+      <h1>Home page</h1>
+
+      <h1>Home page</h1>
+
+      <h1>Home page</h1>
+
+
    </Layout>
 );
 

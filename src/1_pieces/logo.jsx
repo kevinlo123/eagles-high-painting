@@ -28,7 +28,7 @@ const Logo = () => {
       }
    `);
 
-   return <Img fluid={data.placeholderImage.childImageSharp.fluid} />;
+   return <Img alt={'Eagles High Painting Inc. - Logo'} fluid={data.placeholderImage.childImageSharp.fluid} />;
 };
 
 export default Logo;

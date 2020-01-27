@@ -1,4 +1,48 @@
-.logo-container {
-   height: 200px;
-   width: 200px;
+.header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   position: fixed;
+   width: 100%;
+   background: white;
+   border-bottom: 1px solid #f2f2f2;
+
+   &__logo-container {
+      height: 74px;
+      width: 74px;
+      position: relative;
+      bottom: 3px;
+   }
+
+
+   &__cta-hamburger-container {
+      display: flex;
+      align-items: center;
+
+      &-cta-call-now {
+         background: #0A0A86;
+         padding: 0.5rem 1rem;
+         text-transform: uppercase;
+         color: white;
+         font-size: 1.5rem;
+         border-radius: 3px;
+         text-decoration: none;
+         margin-right: 1.25rem;
+      }
+
+      button {
+         padding: .5rem;
+         display: flex;
+         margin-right: 1rem;
+      }
+   }
+
+   &__navigation {
+      position: absolute;
+      width: 100%;
+      top: 100%;
+      background: red;
+      display: none;
+      flex-direction: column;
+   }
 }

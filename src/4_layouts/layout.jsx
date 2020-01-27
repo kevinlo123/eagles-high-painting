@@ -21,6 +21,7 @@ const Layout = ({ children }) => {
          <Header
             siteTitle={data.site.siteMetadata.title}
          />
+         <div className="spacer"></div>
          <main>{children}</main>
          <Footer/>
       </>
