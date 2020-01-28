@@ -16,6 +16,34 @@ const Header = ({ siteTitle }) => {
                <Logo />
             </Link>
          </div>
+         <nav className={`header__navigation ${isOpen ? 'header__navigation--open' : ''}`}>
+            <div className={`header__navigation--inner ${isOpen ? 'header__navigation--inner--open' : ''}`}>
+               <Link 
+                  className="header__navigation--inner-link" 
+                  activeClassName="header__navigation--inner-link-active"
+                  to="/">
+                  Home
+               </Link>
+               <Link 
+                  className="header__navigation--inner-link" 
+                  activeClassName="header__navigation--inner-link-active"
+                  to="/painting-company-boston/our-painting-team/">
+                  About
+               </Link>
+               <Link 
+                  className="header__navigation--inner-link" 
+                  activeClassName="header__navigation--inner-link-active"
+                  to="/painting-company-boston/our-work">
+                  Our Work
+               </Link>
+               <Link 
+                  className="header__navigation--inner-link" 
+                  activeClassName="header__navigation--inner-link-active"
+                  to="/best-boston-painting">
+                  Contact
+               </Link>
+            </div>
+         </nav>
          <div className="header__cta-hamburger-container">
             <a className="header__cta-hamburger-container-cta-call-now" href="tel:617-501-83792">Call Now</a>
             <HamburgerSqueeze 
@@ -24,12 +52,6 @@ const Header = ({ siteTitle }) => {
                barColor="#0A0A86"
             />
          </div>
-         <nav className="header__navigation">
-            <Link to="/">Home</Link>
-            <Link to="/painting-company-boston/our-painting-team/">About</Link>
-            <Link to="/painting-company-boston/our-work">Our Work</Link>
-            <Link to="/best-boston-painting">Contact</Link>
-         </nav>
       </header>
    )
 };
