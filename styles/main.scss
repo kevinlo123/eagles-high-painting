@@ -13,7 +13,8 @@ body {
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
 }
-
+@import './3_regions/_utility-nav.scss';
 @import './3_regions/_header.scss';
 @import './4_layouts/_index.scss';
+@import './2_components/_hero.scss';
 @import './3_regions/_footer.scss';

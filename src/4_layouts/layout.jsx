@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
+import Utility from '../3_regions/utility-nav';
 import Header from '../3_regions/header';
 import Footer from '../3_regions/footer';
 
@@ -18,6 +19,7 @@ const Layout = ({ children }) => {
 
    return (
       <>
+         <Utility/>
          <Header
             siteTitle={data.site.siteMetadata.title}
          />
