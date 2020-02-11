@@ -2,12 +2,15 @@
    display: none;
    background: $blue;
    color: white;
-   justify-content: flex-end;
-   align-items: center;
    padding: .35rem 3rem;
    position: fixed;
    width: 100%;
    z-index: 2;
+
+   .wrapper {
+      justify-content: flex-end;
+      align-items: center;
+   }
    
    &__call-now-txt {
       font-size: 1.75rem;
